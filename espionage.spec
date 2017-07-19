@@ -18,19 +18,19 @@ BuildArch:      noarch
 Espionage is a complete D-Bus inspector
 
 %files
-%doc README COPYING AUTHORS
+%doc README COPYING
 
 %{_bindir}/espionage
-%{python_sitearch}/espionage/__init__.py
-%{python_sitearch}/espionage/espionage.py
-%{python_sitearch}/espionage-%{version}-py%{py_ver}.egg-info
+%{python_sitelib}/*
+%{_iconsdir}/*
+%{_datadir}/applications/espionage.desktop
 
 #----------------------------------------------------------------------------
 
 %prep
 %setup -q -n %{name}-%{version}
 
-#%build
+%build
 %{__python} setup.py build
 
 
