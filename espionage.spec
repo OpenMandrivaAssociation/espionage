@@ -4,7 +4,7 @@ Version:        1.0
 Release:        1
 License:        LGPLv3+
 Group:          Graphical desktop/Enlightenment
-Url:            http://enlightenment.org/
+Url:            https://enlightenment.org/
 Source:         http://download.enlightenment.org/rel/apps/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(edje) >= 1.19.1
 BuildRequires:  python-efl => 1.19.0
